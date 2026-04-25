@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b8962c;
+  --color-dark-bg: #0a0a0a;
+  --color-dark-card: #151515;
+  --color-dark-border: #222222;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+body {
+  @apply bg-[#0a0a0a] text-gray-200 font-sans antialiased selection:bg-gold-500/30 selection:text-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif text-white;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-black/40 backdrop-blur-md border border-white/10;
+}
+
+.glass-card {
+  @apply bg-[#151515]/80 backdrop-blur-md border border-[#222222] hover:border-gold-500/50 transition-colors duration-300;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
