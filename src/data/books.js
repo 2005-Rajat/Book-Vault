@@ -48,7 +48,7 @@ export const booksData = [
         price: 15.99,
         description: "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation.",
         coverImage: "https://m.media-amazon.com/images/I/81bGKUa1e0L._SL1500_.jpg",
-        fileUrl: "Atomic-habbits.pdf",
+        fileUrl: "https://bookvault-backend-bf4e.onrender.com/uploads/books/Atomic-Habits.pdf"",
         rating: 4.8,
         numReviews: 5430,
         category: "Psychology",
